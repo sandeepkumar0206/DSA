@@ -8,8 +8,6 @@ class Solution {
             find(ans,n,o,c+1,s+")");
         }
         if(o<n)find(ans,n,o+1,c,s+"(");
-
-
     }
     public List<String> generateParenthesis(int n) {
         List<String>ans=new ArrayList<>();
