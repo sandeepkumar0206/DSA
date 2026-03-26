@@ -7,6 +7,7 @@ class Solution {
             this.col=col;
         }
     }
+
     public static int height(TreeNode root){
         if(root==null){
             return 0;
@@ -15,6 +16,7 @@ class Solution {
         int r=height(root.right);
         return Math.max(l,r)+1;
     }
+
     public List<List<String>> printTree(TreeNode root) {
         List<List<String>>ans=new ArrayList<>();
         int m=height(root);
@@ -41,4 +43,5 @@ class Solution {
         }
         return ans;
     }
+    
 }
