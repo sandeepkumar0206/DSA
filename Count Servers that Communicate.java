@@ -15,7 +15,7 @@ class Solution {
         int ans=0;
         for(int i=0;i<n;i++){
             for(int j=0;j<m;j++){
-                if(grid[i][j]==1 && r[i]+c[j]>2){
+                if(grid[i][j]==1 && (r[i]>=2 ||  c[j]>=2)){
                     ans++;
                 }
             }
