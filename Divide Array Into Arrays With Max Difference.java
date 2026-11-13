@@ -1,0 +1,17 @@
+class Solution {
+    public int[][] divideArray(int[] nums, int z) {
+        Arrays.sort(nums);
+        int n=nums.length;
+        int ans[][]=new int[n/3][3];
+        int k=0;
+        for(int i=0;i<n;i+=3){
+            if(nums[i+2]-nums[i]>z){
+                return new int[0][0];
+            }
+            ans[i/3][0]=nums[i];
+            ans[i/3][1]=nums[i+1];
+            ans[i/3][2]=nums[i+2];
+        }
+        return ans;
+    }
+}
